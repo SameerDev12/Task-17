@@ -118,14 +118,14 @@
 
 
 /*Main Contents*/
-.s-container-services {
+.s-container-services 
+{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 10vw;
     margin-bottom: 3rem;
 }
-
 
 .s-service {
     display: flex;
@@ -169,16 +169,18 @@
     gap: 1.7rem;
 }
 
-.wh-title {
+.wh-title 
+{
     font-size: 2.3rem;
     margin-bottom: 1rem;
     text-transform: capitalize;
 }
 
-.wh-why-1-info-text {
+.wh-why-1-info-text 
+{
     width: 27rem;
     font-size: 14px;
-    line-height: 1.3rem;
+    line-height: 1.5rem;
 }
 
 .wh-why-1-info {
@@ -188,9 +190,36 @@
     gap: 1rem;
 }
 
-.wh-img {
-    width: 30vw;
+.wh-img 
+{
+    width:20rem;
 }
+
+@media screen and (max-width:834px)
+{
+    .wh-img 
+    {
+        width:35vw;
+    } 
+}
+
+@media screen and (max-width:698px)
+{
+    .wh-img 
+    {
+        width:40vw;
+    } 
+}
+
+@media screen and (max-width:705px)
+{
+    .wh-why-1-info-text 
+    {
+        width: 20rem;
+    }
+}
+
+
 
 .common-color-green {
     color: #41c365;
@@ -280,25 +309,29 @@
 }
 
 /*Questions Start*/
-.qu-question-container {
+.qu-question-container 
+{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 90vw;
 }
 
-.qu-container {
-    display: flex;
-    margin-right: 8rem;
+.qu-container 
+{
+  display: flex;
+  margin-right: 8vw;
 }
 
 
-.qu-title {
+.qu-title 
+{
     font-size: 2.19rem;
     margin-left: 33.7vw;
 }
 
-.qu-text {
+.qu-text 
+{
     font-size: 0.74rem;
 }
 
@@ -326,13 +359,29 @@
     cursor: pointer;
 }
 
-.qu-img {
+.qu-img 
+{
     width: 38vw;
 }
 
-.qu-image-container {
-    margin-top: 5rem;
-    margin-right: 8rem;
+.qu-image-container 
+{
+    margin-top: 5vh;
+    margin-right: 8vw;
+}
+
+@media screen and (max-width:933px)
+{
+    .qu-image-container 
+    {
+        margin-top: 8vh;
+        margin-right:0;
+    }
+
+    .qu-container
+    {
+        margin:0;
+    }
 }
 
 /*Questions End*/
@@ -350,7 +399,7 @@
     display: flex;
     justify-content: center;
     color: white;
-    padding: 10vh 0;
+    padding:10vh 0;
     gap: 5vw;
     background-image: url('/Assets/contact_bg.jpg');
     background-repeat: no-repeat;
@@ -358,7 +407,8 @@
     background-size: cover;
 }
 
-.fo-conatct-info {
+.fo-conatct-info 
+{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -366,14 +416,15 @@
     width: 20rem;
 }
 
-.fo-contact-form {
+.fo-contact-form 
+{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    background-color: white;
     padding: 2rem;
     width: 23rem;
-    background-color: white;
+    gap: 1rem;
 }
 
 .fo-input {
@@ -494,138 +545,24 @@
    }
 }
 
-
-
-@media screen and (max-width:575px) {
-    .o-Header {
-        flex-direction: column;
-        justify-content: center;
-        padding-top: 1.5rem;
-        width: 36rem;
-        background-color: #bccec4;
+@media screen and (max-width:787px)
+{
+    .fo-footer-contacts 
+    {
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem 2rem 4rem 2rem;
     }
 
-    .l-Header-Log {
-        width: 11rem;
-        margin-bottom: 1.4rem;
-    }
-
-    .hero-section {
-        align-items: flex-start;
-        margin-left: 0;
-        margin-right: 5rem;
-        margin-bottom: 1rem;
-        width: 22rem;
-        gap: 1.7rem;
-    }
-
-    .b-hero-section-img-1 {
-        display: none;
-    }
-
-    .b-hero-section-img-2 {
-        margin-left: 15rem;
-        width: 95vw;
-        margin-bottom: 5rem;
-    }
-
-    .hero-container {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .ph-Header-Contact {
-        display: none;
-    }
-
-    .hero-section-btn {
-        padding: 0.7rem 1.7rem;
-        font-size: 1rem;
-    }
-
-    .s-container-services {
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 1rem;
-        gap: 1rem;
-    }
-
-    .s-service-text {
-        width: 19rem;
-    }
-
-    .wh-why-section {
-        flex-direction: column;
-    }
-
-    .wh-img {
-        width: 95vw;
-    }
-
-    .wh-title {
-        margin-top: 1rem;
-        margin-bottom: 1.2rem;
-    }
-
-    .cl-looking-container {
-        flex-direction: column;
-    }
-
-    .cl-looking-content {
-        width: 25rem;
-    }
-
-    .cl-looking-text {
-        width: 22rem;
-        font-size: 14px;
-        line-height: 1.12rem;
-    }
-
-    .cl-looking-content-disable {
-        display: none;
-    }
-
-    .visibale {
-        display: block;
-    }
-
-    .qu-container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-right: 0;
-    }
-
-    .qu-title {
-        width: 100%;
-        text-align: right;
-        font-size: 2rem;
-        margin-left: 0;
-    }
-
-    .qu-image-container {
-        margin: 0;
-        margin-top: 1.5rem;
-        margin-left: 4rem;
-    }
-
-    .qu-img {
-        width: 60vw;
-    }
-
-    .qu-questions-list {
-        margin-top: 2rem;
-        gap: 0.8rem;
-    }
-
-    .fo-footer-contacts {
-        flex-direction: column;
-        padding: 4rem 2rem 4rem 2rem;
-    }
-
-    .fo-conatct-info {
+    .fo-conatct-info 
+    {
         gap: 1rem;
         width: 25rem;
+    }
+
+    .fo-contact-form 
+    {
+        width: 90vw;
     }
 
     .fo-contact-downnload {
@@ -636,15 +573,227 @@
         width: 24rem;
     }
 
-    .fo-contact-form {
-        width: 90vw;
-    }
-
     .btn-contact {
         font-size: 1.7rem;
         width: 14rem;
         margin-top: 1rem;
     }
+}
+
+@media screen and (max-width:775px)
+{
+    .s-container-services 
+    {
+        gap:5vw;
+    }
+}
 
 
+@media screen and (max-width:663px)
+{
+    .o-main 
+    {
+        margin-top: 2rem;
+    }
+
+    .s-container-services 
+    {
+        gap:2vw;
+    }
+}
+
+@media screen and (max-width:675px)
+{
+    .s-container-services 
+    {
+        flex-direction: column;
+        justify-content: center;
+        margin-top:0;
+        gap: 1rem;
+    }
+  
+    .s-service-text 
+    {
+        width: 19rem;
+    }    
+}
+
+@media screen and (max-width:834px)
+{
+    .wh-img 
+    {
+        width:35vw;
+    } 
+}
+
+@media screen and (max-width:698px)
+{
+    .wh-img 
+    {
+        width:40vw;
+    } 
+}
+
+@media screen and (max-width:705px)
+{
+    .wh-why-1-info-text 
+    {
+        width: 20rem;
+    }
+}
+
+
+@media screen and (max-width:719px)
+{
+    .cl-looking-container 
+    {
+        flex-direction: column;
+    }
+  
+    .cl-looking-content 
+    {
+        width: 25rem;
+    }
+    
+    .cl-looking-text 
+    {
+        width: 22rem;
+        font-size: 14px;
+        line-height: 1.12rem;
+    }
+  
+    .cl-looking-content-disable 
+    {
+        display: none;
+    }
+  
+    .visibale 
+    {
+        display: block;
+    }    
+}
+
+
+
+@media screen and (max-width:575px) 
+{
+  .o-Header 
+  {
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 1.5rem;
+      width: 36rem;
+      background-color: #bccec4;
+  }
+
+  .l-Header-Log 
+  {
+      width: 11rem;
+      margin-bottom: 1.4rem;
+  }
+
+  .hero-section 
+  {
+      align-items: flex-start;
+      margin-left: 0;
+      margin-right: 5vw;
+      margin-bottom: 1rem;
+      width: 22rem;
+      gap: 1.7rem;
+  }
+
+  .b-hero-section-img-1 
+  {
+      display: none;
+  }
+
+  .b-hero-section-img-2 
+  {
+      margin-left: 15rem;
+      width: 95vw;
+      margin-bottom: 5rem;
+  }
+
+  .hero-container 
+  {
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  .ph-Header-Contact 
+  {
+      display: none;
+  }
+
+  .hero-section-btn 
+  {
+      padding: 0.7rem 1.7rem;
+      font-size: 1rem;
+  }
+
+  .wh-why-section 
+  {
+      flex-direction: column;
+  }
+
+  .wh-img 
+  {
+      width: 80vw;
+  }
+
+  .wh-title 
+  {
+      margin-top: 1rem;
+      margin-bottom: 1.2rem;
+  }
+
+  .qu-container 
+  {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: 0;
+  }
+
+  .qu-title 
+  {
+      width: 100%;
+      text-align: right;
+      font-size: 2rem;
+      margin-left: 0;
+  }
+
+  .qu-image-container 
+  {
+      margin: 0;
+      margin-top: 1.5rem;
+      margin-left: 4rem;
+  }
+  .qu-img 
+  {
+      width: 60vw;
+  }
+
+  .qu-questions-list 
+  {
+      margin-left:10vw;
+      margin-bottom:1rem;
+      gap: 0.8rem;
+  }
+}
+
+@media screen and (max-width:369px)
+{
+    .wh-img 
+    {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width:397px)
+{
+    .hero-section 
+    {
+        margin-left:20vw;
+    }
 }
